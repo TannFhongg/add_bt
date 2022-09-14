@@ -1,0 +1,32 @@
+.moblie , .tablet , .pc {
+    margin: auto;
+    font-size :100px;
+    color: #fff;
+   display:none;
+}
+
+body {
+    background-color: gold;
+    display: flex;
+   
+    height: 100vh;
+}
+
+/* mobile : width < 740px */
+@media screen and (max-width:740px){
+    .moblie {
+        display: block;
+    }
+}
+/* Tablet : with >= 740 and width <= 1024 */
+@media  screen and (min-width : 740px) and (max-width:1024px) {
+    .tablet {
+        display: block;
+    }
+}
+/* PC width >=1024 */
+@media screen and (min-width:1024px) {
+    .pc {
+        display: block;
+    }
+}
